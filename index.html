@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ArtistHub</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="icon" href="../images/logo_mini.ico"> 
+    </head>
+    <body>
+        <header>
+            <ul id="bandeau">
+                <li><a href="index.html"><img src="../images/logo.png" height="50"></a></li>
+                <li><a href="peinture.html">PEINTURE</a></li>
+                <li><a href="litterature.html">LITTERATURE</a></li>
+                <li><a href="art_de_scene.html">ART DE SCENE</a></li>
+                <li><a href="musique.html">MUSIQUE</a></li>
+                <li><a href="cinema.html">CINEMA </a></li><span id="tag">NEW</span>
+            </ul>
+        </header>
+        <main>
+            <h1 id="title">ArtistHub : Quels sont les artistes qui ont marqué le monde ?</h1>
+            <h3>Ces listes d'artistes sont purement contractuelles et relèvent d'une étude superficielle</h3>
+            <div id="cards">
+                <div id="card">
+                    <div id="content">
+                        <img src="https://img.freepik.com/photos-gratuite/palette-peinture-couleur-sale_23-2148660898.jpg">
+                        <h2>Artistes Peintres</h2>
+                    </div>
+                    <a href="peinture.html"><button>Visiter la page</button></a>
+                </div>
+
+                <div id="card">
+                    <div id="content">
+                        <img src="https://information.tv5monde.com/sites/info.tv5monde.com/files/styles/large/public/assets/images/ThinkstockPhotos-474571303.jpg?itok=GKWfCT1e">
+                        <h2>Artistes Littéraires</h2>
+                    </div>
+                    <a href="litterature.html"><button>Visiter la page</button></a>
+                </div>
+
+                <div id="card">
+                    <div id="content">
+                        <img src="http://www.theatreinparis.com/uploads/images/article/la-nouvelle-seine-petits-theatres-paris-header.jpg">
+                        <h2>Artistes de scène</h2>
+                    </div>
+                    <a href="art_de_scene.html"><button>Visiter la page</button></a>
+                </div>
+
+                <div id="card">
+                    <div id="content">
+                        <img src="https://www.jinxproof.fr/wp-content/uploads/2022/05/photo-encart-02.jpg">
+                        <h2>Artistes musicaux</h2>
+                    </div>
+                    <a href="musique.html"><button>Visiter la page</button></a>
+                </div>
+
+                <div id="card">
+                    <div id="content">
+                        <img src="https://focus.nouvelobs.com/2022/07/15/293/0/3543/1771/633/306/75/0/6aed11e_1657900167805-divergence-mc2928003.jpg">
+                        <h2>Artistes de cinéma</h2>
+                    </div>
+                    <a href="cinema.html"><button>Visiter la page</button></a>
+                </div>
+            </div>
+
+            <h1 id="title">Contribuez</h1>
+            <h3>Aidez nous à compléter notre base de données sur les artistes qui ont révolutionné le monde !</h3>
+
+            <form>
+                <input type="text" placeholder="Nom de l'artiste" maxlength="30">
+                <br>
+                <select class="type_artist">
+                    <option value="">Veuillez entrer le type d'artiste</option>
+                    <option value="peintre">Peintre</option>
+                    <option value="peintre">Artiste Littéraire</option>
+                    <option value="peintre">Artiste de scène</option>
+                    <option value="peintre">Artiste Mucical</option>
+                    <option value="peintre">Artiste de cinéma</option>
+                </select>
+                <br>
+                <input type="text" placeholder="Courte description" maxlength="1000" width="500">
+                <br>
+                <button type="submit" onclick="alert_function()">Envoyer</button>
+                <script>
+                function alert_function() {
+                    alert("Votre formulaire à bien été envoyé, merci pour votre contribution !");
+                  }
+                </script>
+            </form>
+        </main>
+    </body>
+</html>
